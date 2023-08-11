@@ -1,0 +1,107 @@
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes
+$ echo "# DSAnotes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AkashKumarGoutam/DSAnotes.git
+git push -u origin main
+Initialized empty Git repository in C:/Users/Akash/Desktop/DSA_notes/.git/
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Akash@AkashKumarGoutam.(none)')
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/AkashKumarGoutam/DSAnotes
+.git'
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ ^C
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$  git config --global user.email "akashkumar126954@gmail.com"
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ ^C
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git config --global user.name "AkashKumarGoutam"
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ echo "# DSAnotes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AkashKumarGoutam/DSAnotes.git
+git push -u origin main
+Reinitialized existing Git repository in C:/Users/Akash/Desktop/DSA_notes/.git/
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+[main (root-commit) 36b6b4e] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+error: remote origin already exists.
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AkashKumarGoutam/DSAnotes.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BasicProgram/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git add .
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   BasicProgram/printarray.java
+
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git commit -m "added a basic program folder"
+[main d2de99f] added a basic program folder
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 BasicProgram/printarray.java
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 354 bytes | 354.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AkashKumarGoutam/DSAnotes.git
+   36b6b4e..d2de99f  main -> main
+
+Akash@AkashKumarGoutam MINGW64 ~/Desktop/DSA_notes (main)
